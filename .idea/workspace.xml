@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7f72b50-11b8-4fba-8dfe-4f183c4d1000" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/Utils/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/data/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/data/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/requests/AddUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/requests/DeleteUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/requests/EditUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/requests/SearchUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/responses/AddUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/responses/DeleteUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/responses/EditUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/dtos/responses/SearchUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/exceptions/DuplicateUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/services/UserServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EBillingSystem/services/UserServices.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BXkhcvZ0UDTNo60QexONzYWeAk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="EBillingSystem.exceptions" />
+      <recent name="EBillingSystem.dtos.requests" />
+      <recent name="EBillingSystem.dtos.responses" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7f72b50-11b8-4fba-8dfe-4f183c4d1000" name="Changes" comment="" />
+      <created>1657059938838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657059938838</updated>
+      <workItem from="1657059941178" duration="19000" />
+      <workItem from="1657060032951" duration="6851000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
