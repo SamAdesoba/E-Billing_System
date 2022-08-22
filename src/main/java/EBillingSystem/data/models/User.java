@@ -13,12 +13,12 @@ import java.time.LocalDateTime;
 @Data
 public class User {
 	@Id
-	private int id;
+	private String id;
 	@NonNull
 	private int roleId;
 	private String userName;
 	private String email;
-	private LocalDateTime dob;
+	private String dob;
 	private String address;
 	private String password;
 	private LocalDateTime datedAdded = LocalDateTime.now();

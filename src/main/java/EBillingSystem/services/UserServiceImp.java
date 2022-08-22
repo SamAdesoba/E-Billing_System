@@ -9,17 +9,20 @@ import EBillingSystem.dtos.requests.SearchUserRequest;
 import EBillingSystem.dtos.responses.AddUserResponse;
 import EBillingSystem.dtos.responses.DeleteUserResponse;
 import EBillingSystem.dtos.responses.EditUserResponse;
-import EBillingSystem.dtos.responses.SearchUserResponse;
 import EBillingSystem.exceptions.DuplicateUserException;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 
 
 import static EBillingSystem.Utils.Mapper.*;
-
+@Service
 public class UserServiceImp implements UserServices{
-	@Autowired
+
 	private UserRepository userRepository;
+	@Autowired
+	public UserServiceImp(UserRepository userRepository){
+		this.userRepository = userRepository;
+	}
 
 	@Override
 	public AddUserResponse addUser(AddUserRequest request) {
@@ -41,16 +44,44 @@ public class UserServiceImp implements UserServices{
 
 	@Override
 	public EditUserResponse editUser(EditUserRequest request) {
-		return null;
+		if(!userRepository.existsByEmail(request.getEmail()))
+			throw new DuplicateUserException("User doesn't exist!!");
+
+		User foundUser = userRepository.findByEmail(request.getEmail());
+
+		foundUser.setEmail(request.getEmail());
+		foundUser.setUserName(request.getUserName());
+		foundUser.setDob(request.getDob());
+		foundUser.setAddress(request.getAddress());
+
+		User editedUser = userRepository.save(foundUser);
+		EditUserResponse response = new EditUserResponse();
+		map(editedUser, response);
+
+		return response;
 	}
 
 	@Override
 	public DeleteUserResponse deleteUser(DeleteUserRequest request) {
-		return null;
+		if(!userRepository.existsByEmail(request.getEmail()))
+			throw new DuplicateUserException("User doesn't exist!!");
+
+		User foundUser = userRepository.findByEmail(request.getEmail());
+		userRepository.delete(foundUser);
+		DeleteUserResponse response = new DeleteUserResponse();
+		if (!userRepository.equals(foundUser)) {
+			response.setDeleteMessage("User deleted");
+		}
+		return response;
 	}
 
 	@Override
-	public SearchUserResponse searchUser(SearchUserRequest request) {
-		return null;
+	public User searchUser(SearchUserRequest request) {
+		if(!userRepository.existsByEmail(request.getEmail()))
+			throw new DuplicateUserException("User doesn't exist!!");
+
+		User foundUser = userRepository.findByEmail(request.getEmail());
+
+		return foundUser;
 	}
 }
